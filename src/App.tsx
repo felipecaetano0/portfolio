@@ -108,12 +108,12 @@ function App() {
       {/* Header */}
       <header className="bg-black text-2xl font-bold pt-15 pb-3 px-15"
         style={{ backgroundImage: `url(${engrenagem_binaria})`, backgroundSize: '35%', backgroundPosition: 'left', backgroundRepeat: 'no-repeat', backgroundPositionY: '-8vh', backgroundPositionX: '-5vh' }}>
-        <div className="flex flex-row justify-between flex-wrap ">
+        <div className="flex flex-row justify-around lg:justify-between  flex-wrap ">
           <div className="flex flex-col justify-between items-left pl-10">
-            <h2 className='text-left text-5xl font-bold text-white'>
+            <h2 className='text-center lg:text-left text-5xl font-bold text-white'>
               Felipe Caetano
             </h2>
-            <p className="text-base text-gray-400 font-normal">
+            <p className="text-center lg:text-left text-base text-gray-400 font-normal">
               Engenheiro de Computadores e Técnico em eletrônica
             </p>
           </div>
