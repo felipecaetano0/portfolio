@@ -301,7 +301,7 @@ function App() {
           <p className="text-3xl font-bold pb-3">
             Contato:
           </p>
-          <WhatsAppButton full_number='5535988566083' display_number='+55 (35) 98856-6083' />
+          <WhatsAppButton full_number='5535988566083' display_number='(35) 98856-6083' />
           <GmailButton email='felipecaetano0@gmail.com' />
 
         </div>
