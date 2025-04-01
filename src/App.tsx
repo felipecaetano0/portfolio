@@ -168,6 +168,9 @@ function App() {
         <p className="text-4xl text-green-500">
           Achou interessante? Vamos conversar!
         </p>
+        <p className="text-2xl ">
+          Entre em contato para uma análise gratuita e sem compromisso.
+        </p>
         <p className="text-2xl pb-10">
           Eu posso resolver seus problemas e tornar sua vida mais fácil!
         </p>
