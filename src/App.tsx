@@ -1,13 +1,14 @@
+// Components
 import './App.css'
 import DemoPanel from './DemoPanel'
-import flex_motor_img from './assets/flex-motor.png'
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-// import "swiper/css/bundle";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import { useEffect } from 'react';
+import WhatsAppButton from './WhatsAppButton';
 
+
+// Images
+import flex_motor_img from './assets/flex-motor.png'
 
 import fluxo1 from './assets/fluxo1.png'
 import fluxo2 from './assets/fluxo2.png'
@@ -17,21 +18,24 @@ import fluxo5 from './assets/fluxo5.png'
 import fluxo6 from './assets/fluxo6.png'
 import fluxo7 from './assets/fluxo7.png'
 import fluxo8 from './assets/fluxo8.png'
-
 const fluxo_imgs = [fluxo1, fluxo2, fluxo3, fluxo4, fluxo5, fluxo6, fluxo7, fluxo8]
-
 
 import diabetes1 from './assets/diabetes1.png'
 import diabetes2 from './assets/diabetes2.png'
 import diabetes3 from './assets/diabetes3.png'
 import diabetes4 from './assets/diabetes4.png'
-
 const diabetes_imgs = [diabetes1, diabetes2, diabetes3, diabetes4]
 
 import engrenagem_binaria from './assets/engrenagem_binaria.png'
 import banner from './assets/banner3.png'
-import { useEffect } from 'react';
+import GmailButton from './GmailButton';
+import { FaWhatsapp } from 'react-icons/fa';
 
+
+// Informações que podem mudar ao longo do tempo
+const telefone_completo = '5535988566083'
+const telefone_display = '(35) 98856-6083'
+const email = 'felipecaetano0@gmail.com'
 
 type Servico = {
   nome: string
@@ -104,25 +108,19 @@ function App() {
       {/* Header */}
       <header className="bg-black text-2xl font-bold pt-15 pb-3 px-15"
         style={{ backgroundImage: `url(${engrenagem_binaria})`, backgroundSize: '35%', backgroundPosition: 'left', backgroundRepeat: 'no-repeat', backgroundPositionY: '-8vh', backgroundPositionX: '-5vh' }}>
-        <div className="container mx-auto flex justify-between items-center ">
-          <h2 className='text-left text-5xl font-bold text-white'>
-            Felipe Caetano
-          </h2>
-          <a href="https://wa.me/5535988566083"
-            className="text-sm items-center p-2 hover:border-white bg-green-600 text-white border-0 rounded-lg md:w-20vw w-full"
-            style={{ color: 'white', borderRadius: '2.5rem', width: '20vw' }}>
-             WhatsApp: (35)98856-6083
-          </a>
-        </div>
-        <div className="container mx-auto flex justify-between items-center">
-          <p className="text-base text-gray-400 font-normal">
-            Engenheiro de Computadores e Técnico em eletrônica
-          </p>
-          <a href="mailto:felipecaetano0@gmail.com"
-            className="text-xs items-center p-2 px-5 hover:border-white bg-green-600 text-white border-0 rounded-lg md:w-20vw w-full"
-            style={{ background: '#620101', color: 'white', borderRadius: '2.5rem', width: '20vw' }}>
-            󰊫 Gmail: felipecaetano0@gmail.com
-          </a>
+        <div className="flex flex-row justify-between flex-wrap ">
+          <div className="flex flex-col justify-between items-left pl-10">
+            <h2 className='text-left text-5xl font-bold text-white'>
+              Felipe Caetano
+            </h2>
+            <p className="text-base text-gray-400 font-normal">
+              Engenheiro de Computadores e Técnico em eletrônica
+            </p>
+          </div>
+          <div className="flex flex-col justify-between items-stretch gap-2">
+            <WhatsAppButton full_number={telefone_completo} display_number={telefone_display} />
+            <GmailButton email={email} />
+          </div>
         </div>
       </header>
 
@@ -166,7 +164,7 @@ function App() {
 
 
       {/* Contato */}
-      <div className="text-center py-30">
+      <div className="flex flex-col text-center py-30 items-center">
         <p className="text-4xl text-green-500">
           Achou interessante? Vamos conversar!
         </p>
@@ -174,12 +172,13 @@ function App() {
           Eu posso resolver seus problemas e tornar sua vida mais fácil!
         </p>
         <button
-          className="items-center  hover:border-white bg-green-500 text-white border-2 border-solid rounded-lg "
-          onClick={() => window.location.href = 'https://wa.me/5535988566083'}
-          style={{ backgroundColor: '#00A63E', borderRadius: '2.5rem', width: '20%' }}
+          className=" flex flex-row items-center justify-around"
+          onClick={() => window.location.href = 'https://wa.me/' + telefone_completo}
+          style={{ backgroundColor: '#00A63E', borderRadius: '2.5rem', minWidth: '18rem', width: 'auto'  }}
         >
+          <FaWhatsapp className="text-xl text-white " />
           <p className='text-xl'>
-             Entre em contato
+            Entre em contato
           </p>
         </button>
       </div>
@@ -302,16 +301,8 @@ function App() {
           <p className="text-3xl font-bold pb-3">
             Contato:
           </p>
-          <a href="https://wa.me/5535988566083"
-            className="text-sm items-center p-2 hover:border-white bg-green-600 text-white border-0 rounded-lg  md:w-20vw w-full"
-            style={{ color: 'white', borderRadius: '2.5rem', width: '20vw' }}>
-             WhatsApp: (35)98856-6083
-          </a>
-          <a href="mailto:felipecaetano0@gmail.com"
-            className="text-xs items-center p-2 px-5 hover:border-white bg-green-600 text-white border-0 rounded-lg  md:w-20vw w-full"
-            style={{ background: '#620101', color: 'white', borderRadius: '2.5rem', width: '20vw' }}>
-            󰊫 Gmail: felipecaetano0@gmail.com
-          </a>
+          <WhatsAppButton full_number='5535988566083' display_number='+55 (35) 98856-6083' />
+          <GmailButton email='felipecaetano0@gmail.com' />
 
         </div>
       </footer>
