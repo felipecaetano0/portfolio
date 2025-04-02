@@ -234,7 +234,7 @@ function App() {
         </Swiper>
       </div>
       <div className="flex flex-col justify-center items-center ">
-        <p className='text-xl text-gray-400 w-1/2 text-center p-1 m:p-10'>
+        <p className='text-xl text-gray-400 w-1/2 text-center px-1 m:px-10'>
           Aplicativo para registrar vendas, cuidar do estoque e despesas, gerar relatórios e gráficos de vendas e despesas.
           Também é possível criar um produto a partir de outros ou um serviço que utiliza os produtos do estoque, utilizando uma lista de materiais que são descontados iterativamente do estoque.
         </p>
@@ -249,7 +249,7 @@ function App() {
           width="30%"
           style={{ minWidth: '300px', borderRadius: '30px', flex: '1' }}
         />
-        <p className='text-xl text-gray-400 w-1/2 text-center p-1 m:p-10'>
+        <p className='text-xl text-gray-400 w-1/2 text-center px-1 m:px-10'>
           Aparelho de fisioterapia similar a uma bicicleta ergométrica, onde o pedal é movimentado e controlado por um motor. A velocidade
           e o tempo de duração do treino são ajustadas de acordo com a necessidade do paciente.
         </p>
@@ -281,14 +281,14 @@ function App() {
         </Swiper>
       </div>
       <div className="flex flex-col justify-center items-center ">
-        <p className='text-xl text-gray-400 w-1/2 text-center p-1 m:p-10'>
+        <p className='text-xl text-gray-400 w-1/2 text-center px-1 m:px-10'>
           Este aplicativo tem como objetivo ajudar pessoas com diabetes a monitorar seu índice glicêmico e alertar um contato em caso de necessidade.
         </p>
       </div>
 
       <h3 className="text-2xl font-bold text-center pt-15 pb-7">Infinity Pool</h3>
       <div className="flex flex-col justify-center items-center ">
-        <p className='text-xl text-gray-400 w-1/2 text-center p-1 m:p-10'>
+        <p className='text-xl text-gray-400 w-1/2 text-center px-1 m:px-10'>
           Sistema para gerenciar uma piscina inteligente para atletas de alto desempenho.
           Com ela é possível coletar dados do treino do nadador
           e informar grandezas ao usuário como distância total percorrida, velocidade atual e média,
