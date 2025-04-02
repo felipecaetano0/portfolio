@@ -233,7 +233,7 @@ function App() {
           ))}
         </Swiper>
       </div>
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center p-10">
         <p className='text-xl text-gray-400 md:w-1/2 px-5 text-justify md:text-center'>
           Aplicativo para registrar vendas, cuidar do estoque e despesas, gerar relatórios e gráficos de vendas e despesas.
           Também é possível criar um produto a partir de outros ou um serviço que utiliza os produtos do estoque, utilizando uma lista de materiais que são descontados iterativamente do estoque.
@@ -242,7 +242,7 @@ function App() {
 
 
       <h3 className="text-2xl font-bold text-center pt-15 pb-7">Flex Motor</h3>
-      <div className="flex flex-col justify-center items-center gap-7">
+      <div className="flex flex-col justify-center items-center gap-7 p-10 ">
         <img
           src={flex_motor_img}
           alt="Aparelho de fisioterapia Flex Motor para reabilitação"
@@ -280,14 +280,14 @@ function App() {
           ))}
         </Swiper>
       </div>
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center p-10">
         <p className='text-xl text-gray-400 md:w-1/2 px-5 text-justify md:text-center'>
           Este aplicativo tem como objetivo ajudar pessoas com diabetes a monitorar seu índice glicêmico e alertar um contato em caso de necessidade.
         </p>
       </div>
 
       <h3 className="text-2xl font-bold text-center pt-15 pb-7">Infinity Pool</h3>
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center p-10">
         <p className='text-xl text-gray-400 md:w-1/2 px-5 text-justify md:text-center '>
           Sistema para gerenciar uma piscina inteligente para atletas de alto desempenho.
           Com ela é possível coletar dados do treino do nadador
