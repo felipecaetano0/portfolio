@@ -27,7 +27,7 @@ import diabetes4 from './assets/diabetes4.png'
 const diabetes_imgs = [diabetes1, diabetes2, diabetes3, diabetes4]
 
 import engrenagem_binaria from './assets/engrenagem_binaria.png'
-import banner from './assets/banner3.png'
+import banner from './assets/logo_colorida.png'
 import GmailButton from './GmailButton';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -45,7 +45,7 @@ type Servico = {
 }
 
 const servicos: Servico[] = [
-  { nome: "Consultoria e Suporte Técnico em Tecnologia", descricao: "Consulta técnica para empresas ou indivíduos para solucionar problemas técnicos, melhorar processos e tomar decisões estratégicas relacionadas à tecnologia. O objetivo pode variar, desde a implementação de novas ferramentas até a otimização de sistemas existentes.", preco: 100 },
+  { nome: "Consultoria e Suporte Técnico em Tecnologia", descricao: "Consulta técnica para empresas ou indivíduos para solucionar problemas técnicos, melhorar processos e tomar decisões estratégicas relacionadas à tecnologia. O objetivo pode variar, desde a implementação de novas ferramentas até a otimização de sistemas existentes. Não irei cobrar nada sem propor uma solução uma solução para seu problema." },
   { nome: "Computadores Pessoais", descricao: "Formatação, limpeza, manutenções gerais, melhorias, instalação de programas, configuração de impressoras, etc.", preco: 100 },
   { nome: "Computadores Servidores", descricao: "Manutenção e configuração de servidores, instalação de serviços, backup, criação de servidores de arquivos locais, etc.", preco: 250 },
   { nome: "Automação de Processos", descricao: "Desenvolvimento de robôs para automatização de processos manuais.", preco: 200 },
@@ -128,7 +128,7 @@ function App() {
       {/* Seção de Apresentação */}
       <section className="text-center p-10"
         style={{
-          backgroundImage: `url(${banner})`, backgroundSize: '80vw', backgroundPosition: '', backgroundRepeat: 'no-repeat', backgroundPositionY: '', backgroundPositionX: '20vw', backgroundColor: '#000000',
+          backgroundImage: `url(${banner})`, backgroundSize: '80vw', backgroundPosition: '', backgroundRepeat: 'no-repeat', backgroundPositionY: '', backgroundPositionX: '20vw', backgroundColor: '#000000', 
         }}
       >
         <h1 className="text-xl font-bold">
@@ -137,7 +137,7 @@ function App() {
         <p className="text-2xl text-gray-400 pb-15">
           Vamos usar tecnologia para ajudar a construir um futuro melhor.
         </p>
-        <p className="text-2xl text-blue-500 font-bold p-10">
+        <p className="text-2xl text-blue-300 font-bold p-10">
           Ajudo empresas e profissionais a resolver problemas técnicos,
           melhorar processos e tomar decisões estratégicas relacionadas à tecnologia.
 
