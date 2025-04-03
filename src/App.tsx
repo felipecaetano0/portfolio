@@ -137,7 +137,7 @@ function App() {
         <p className="text-2xl text-gray-400 pb-15">
           Vamos usar tecnologia para ajudar a construir um futuro melhor.
         </p>
-        <p className="text-2xl text-white font-bold py-10 px-1 md:px-7 text-justify md:text-center">
+        <p className="text-2xl text-white font-bold py-10 px-1 md:px-7 text-center">
           Ajudo empresas e profissionais a resolver problemas técnicos,
           melhorar processos e tomar decisões estratégicas relacionadas à tecnologia.
 
